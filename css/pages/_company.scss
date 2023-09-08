@@ -1,0 +1,144 @@
+/*--------------------------------------------
+
+会社概要
+
+---------------------------------------------*/
+
+
+.table{
+    width: 100%;
+    max-width: 860px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    th,td{
+        padding: 17px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    td{
+        border-left: none;
+        line-height: 1.8;
+    }
+
+    th{
+        background: $lightgray;
+        width: 20%;
+        border-right: 0px;
+        letter-spacing: 0.5em;
+    }
+}
+
+#company{
+
+    .table{
+        th,td{
+            border: 1px solid #ccc;
+        }
+    }
+
+    a{
+        color: #000;
+        text-decoration: underline;
+    }
+
+    padding-top: 210px;
+    margin-bottom: 100px;
+
+    h2{
+        text-align: center;
+        margin-bottom: 59px;
+    }
+}
+
+#access{
+    text-align: center;
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 46px;
+    }
+
+    .table{
+
+        th{
+            background: #fff;
+            color: $mainColor;
+            font-weight: bold;
+            width: 80px;
+        }
+
+        tr:first-child{
+            border-bottom: 1px solid #ccc;
+        }
+
+    }
+
+    iframe{
+        width: 100%;
+        max-width: 860px;
+        height: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        margin-top: 11px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 765px){
+
+    .table{
+        
+        tr,th,td{
+            display: block;
+            margin-top: -1px;
+            text-align: left;
+        }
+
+        th{
+            width: auto;
+        }
+
+        th,td{
+            padding: 15px;
+        }
+    }
+
+    #company{
+
+        padding-top: 122px;
+        margin-bottom: 63px;
+
+        h2{
+            font-size: 25px;
+            margin-bottom: 32px;
+        }
+    }
+
+    #access{
+
+        h2{
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        .table{
+
+            td{
+                padding-top: 10px;
+                border-bottom: none;
+            }
+
+            th{
+                padding-bottom: 1px;
+                width: 49px;
+            }
+
+            tr:first-child{
+                border-bottom: none;
+            }
+        }
+    }
+}

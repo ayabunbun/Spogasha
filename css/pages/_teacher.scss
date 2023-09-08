@@ -1,0 +1,355 @@
+/*--------------------------------------------
+
+スポーツ教育関係者の方へ
+
+---------------------------------------------*/
+
+/* teacher-hero
+------------------------------*/
+#teacher-hero{
+    padding-top: 239px;
+    margin-bottom: 22px;
+}
+
+.teacher-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-img{
+    width: 27%;
+    padding-left: 0;
+    margin-top: -73px;
+    margin-left: -19px;
+
+    img{
+        width: 100%;
+    }
+}
+
+.teacher-img-sp{
+    display: none;
+}
+
+.teacher-text{
+    width: 75%;
+    max-width: 743px;
+
+    h2{
+        margin-bottom: 25px;
+        letter-spacing: 0.05em;
+    }
+}
+
+/* teacher-example
+------------------------------*/
+.teacher-example-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 7%;
+}
+
+.balloon01-01{
+    margin-bottom: 128px;
+}
+
+.teacher-section{
+    position: relative;
+}
+
+.bg{
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: calc(50vw - 5.5%);
+    padding-right: calc(50vw - 50%);
+    padding-top: 60px;
+    padding-bottom: 106px;
+    background: #F2F2F2;
+    margin-bottom: 249px;
+    position: relative;
+}
+
+.teacher-section:last-child{
+    margin-bottom: -158px;
+}
+
+.teacher-example-img{
+    position: absolute;
+    top: -5%;
+    left: 10%;
+
+    img{
+        width: 260px;
+    }
+}
+
+
+
+.teacher-example-sp{
+    display: none;
+}
+
+.teacher-section-title
+{
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: calc(50vw - 5.5%);
+    padding-right: calc(50vw - 50%);
+    color: #000;
+    margin-bottom: 25px;
+}
+
+
+
+/* teacher-recruit
+------------------------------*/
+#teacher-recruit{
+    
+    margin-top: -13px;
+    margin-bottom: 141px;
+
+}
+
+.balloon01-02{
+    margin-bottom: 99px;
+    padding-bottom: 69px;
+
+    h2{
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    p{
+        color: #fff;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.teacher-recruit-img{
+    max-width: 1255px;
+    margin: auto;
+    position: relative;
+}
+
+.teacher-recruit-bg{
+    width: 100%;
+}
+
+.teacher-recruit-logo{
+    position: absolute;
+    bottom: -12%;
+    left: clamp(574px, 56vw, 878px);
+    width: 434px;
+}
+
+.teacher-recruit-container{
+    
+    text-align: center;
+
+
+    h2{
+        font-size: 35px;
+        margin-bottom: 38px;
+    }
+
+    p{
+        color: $mainColor;
+        margin-bottom: 42px;
+    }
+
+    .heading-emphasize::after{
+        margin-left: 37px;
+        margin-top: 0;
+    }
+
+    .heading-emphasize::before{
+        margin-right: 37px;
+        margin-top: 0;
+    }
+}
+
+.recruit-contact{
+    margin-bottom: 32px;
+    img{
+        width: 100%;
+        max-width: 1080px;
+    }
+}
+
+    /* モバイル用
+------------------------------*/
+
+@media (max-width: 1024px){
+    #teacher-hero{
+
+        padding-top: 136px;
+        margin-bottom: 56px;
+
+        .teacher-img{
+            display: none;
+        }
+
+        h2{
+            margin-bottom: 9px;
+        }
+
+        .teacher-container{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .teacher-img-sp{
+            display: block;
+            width: 271px;
+            margin: 0 auto;
+            padding-bottom: 19px;
+        }
+
+        .teacher-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    #teacher-example{
+
+        margin-bottom: 229px;
+
+        .balloon01{
+
+            padding: 19px 0;
+
+            h2{
+                font-size: 20px;
+            }
+        }
+
+        .balloon01-01{
+            margin-bottom: 63px;
+        }
+
+        .teacher-example-img{
+            display: none;
+        }
+
+        @media (max-width: 1024px){
+        .teacher-example-sp02 {
+            width: 227px;
+            height: auto;
+        }
+        }
+
+        .teacher-section{
+            text-align: center;
+
+            figure{
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .teacher-section-title {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        .teacher-example-sp01{
+            padding-bottom: 24px;
+        }
+
+        .teacher-example-sp{
+            display: block;
+        }
+
+        .bg {
+            margin-left: -8%;
+            margin-right: -8%;
+            padding-left: 7%;
+            padding-right: 7%;
+            padding-top: 256px;
+            padding-bottom: 43px;
+            margin-bottom: 97px;
+            margin-top: -235px;
+            position: static;
+            text-align: left;
+        }
+    }
+
+    #teacher-recruit{
+        margin-top: 34px;
+        margin-bottom: 100px;
+
+        .balloon01-02{
+
+            padding-bottom: 55px;
+            margin-bottom: 54px;
+
+            h2{
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 18px;
+                margin-left: 7%;
+                margin-right: 7%;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+            }
+
+            .teacher-recruit-logo{
+                bottom: -30px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                width: 323px;
+            }
+        }
+
+        .teacher-recruit-container{
+
+            padding: 0 7%;
+
+            h2{
+                font-size: 20px;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            .heading-emphasize::before, .heading-emphasize::after {
+                display: none;
+            }
+
+            .recruit-contact {
+                margin-bottom: 23px;
+                margin-left: -7%;
+                margin-right: -7%;
+            }
+
+            p{
+                margin-bottom: 45px;
+                text-align: left;
+            }
+
+            .br-pc{
+                display: none;
+            }
+
+        }
+    }
+}
